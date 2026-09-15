@@ -1,0 +1,66 @@
+{
+  "effects": [
+    {
+      "dataset": "kth_tips2b",
+      "comparison": "B5_minus_B4W",
+      "delta_macro_f1": 0.1158768330786597,
+      "delta_nll": -0.4551349584636548,
+      "delta_macro_f1_ci": [
+        0.0763365669086462,
+        0.15140830307419942
+      ],
+      "delta_nll_ci": [
+        -0.9757410890348078,
+        -0.08104999482436306
+      ]
+    },
+    {
+      "dataset": "fmd",
+      "comparison": "B5_minus_B4W",
+      "delta_macro_f1": 0.027693450011606224,
+      "delta_nll": -0.138085033334562,
+      "delta_macro_f1_ci": [
+        0.0031439358922848194,
+        0.05125064568155252
+      ],
+      "delta_nll_ci": [
+        -0.30947339353952774,
+        -0.035225088910267856
+      ]
+    },
+    {
+      "dataset": "kylberg",
+      "comparison": "B5_minus_B4W",
+      "delta_macro_f1": 0.05644621049758214,
+      "delta_nll": -0.04778799140230694,
+      "delta_macro_f1_ci": [
+        0.038398337889444654,
+        0.07319215268760047
+      ],
+      "delta_nll_ci": [
+        -0.3030885797242912,
+        0.38688486753233775
+      ]
+    }
+  ],
+  "energy": [
+    {
+      "dataset": "kth_tips2b",
+      "min_S_E": 0.0011770537183729858,
+      "zero_count": 0,
+      "n": 4752
+    },
+    {
+      "dataset": "fmd",
+      "min_S_E": 0.05188926432711646,
+      "zero_count": 0,
+      "n": 1000
+    },
+    {
+      "dataset": "kylberg",
+      "min_S_E": 0.07921084458261189,
+      "zero_count": 0,
+      "n": 4480
+    }
+  ]
+}

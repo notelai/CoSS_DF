@@ -1,0 +1,18 @@
+CoSS-DF GitHub release validation
+
+Source package: cossdf 1.0.6
+Validation date: 2026-09-15
+
+Checks completed:
+- python -m compileall -q cossdf : PASS
+- pytest -q : PASS (25 passed)
+- wheel build with pyproject.toml : PASS
+- nested package inclusion (datasets/features/models/analysis) : PASS
+- SOURCE_MANIFEST.txt exactness : PASS
+- Colab notebook output/execution-state cleanup : PASS
+- public dataset registry restricted to KTH-TIPS2b, FMD, and Kylberg : PASS
+- scan for reviewer/conference history in public source : PASS
+- scan for API keys/passwords/private keys/personal home paths : PASS
+- archival Software S1 SHA-256 match : PASS
+
+The tests are implementation checks. Reproducing the numerical study additionally requires the public datasets and the reported computational environment/configuration.

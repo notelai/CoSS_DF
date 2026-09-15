@@ -1,0 +1,135 @@
+{
+  "project": "CoSS-DF",
+  "contract_version": "1.0",
+  "seed": 2026,
+  "image": {
+    "shorter_side": 224,
+    "crop": 224,
+    "interpolation": "bicubic",
+    "antialias": true,
+    "stochastic_augmentation": false
+  },
+  "backbone": {
+    "name": "resnet18",
+    "weights": "IMAGENET1K_V1",
+    "frozen": true,
+    "embedding_dim": 512
+  },
+  "spatial": {
+    "pca_dims": [
+      4,
+      8,
+      12,
+      16
+    ],
+    "pca_eigenvalue_floor": 1e-12,
+    "kde_bandwidths": [
+      0.25,
+      0.5,
+      0.75,
+      1.0,
+      1.5,
+      2.0
+    ]
+  },
+  "spectral": {
+    "block_size": 8,
+    "band_counts": [
+      4,
+      6,
+      8
+    ],
+    "eta": 1e-06,
+    "gamma": 1e-06,
+    "covariance_floor": 1e-12,
+    "kde_bandwidths": [
+      0.25,
+      0.5,
+      0.75,
+      1.0,
+      1.5,
+      2.0
+    ],
+    "grid_offsets_secondary": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        4
+      ],
+      [
+        4,
+        0
+      ],
+      [
+        4,
+        4
+      ]
+    ]
+  },
+  "sensitivity": {
+    "dataset": "kth_tips2b",
+    "eta_values": [
+      1e-08,
+      1e-06,
+      0.0001,
+      0.01
+    ],
+    "gamma_values": [
+      1e-08,
+      1e-06,
+      0.0001,
+      0.01
+    ]
+  },
+  "fusion": {
+    "lambda_bounds": [
+      0.0,
+      1.0
+    ],
+    "fixed_lambda": 0.5,
+    "optimizer": "bounded_brent",
+    "primary": "logop_joint_selection"
+  },
+  "metrics": {
+    "primary_discrimination": "macro_f1",
+    "primary_probabilistic": "nll",
+    "secondary": [
+      "accuracy",
+      "balanced_accuracy",
+      "brier",
+      "ece"
+    ],
+    "ece_bins": 15,
+    "ece_binning": "equal_frequency"
+  },
+  "bootstrap": {
+    "resamples": 10000,
+    "ci": [
+      0.025,
+      0.975
+    ],
+    "paired": true
+  },
+  "datasets": {
+    "kth_tips2b": {
+      "outer_folds": 4,
+      "inner_folds": 3,
+      "grouped": true
+    },
+    "fmd": {
+      "outer_folds": 5,
+      "inner_folds": 3,
+      "grouped": false
+    },
+    "kylberg": {
+      "outer_folds": 4,
+      "inner_folds": 3,
+      "grouped": true
+    }
+  },
+  "tie_tolerance": 1e-12,
+  "dtype_statistical": "float64"
+}

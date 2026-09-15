@@ -1,0 +1,15 @@
+{
+  "purpose": "Controlled geometry, directional, and strong-expert fusion analyses",
+  "datasets": [
+    "kth_tips2b",
+    "fmd",
+    "kylberg"
+  ],
+  "directional_sectors": 2,
+  "comparisons": [
+    "DIR_MATCHED-B5",
+    "DIR_TUNED-B5",
+    "C3-fusion-C3S",
+    "LR-ILR-LR-linear"
+  ]
+}

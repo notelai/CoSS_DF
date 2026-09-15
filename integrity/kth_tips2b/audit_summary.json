@@ -1,0 +1,33 @@
+{
+  "dataset": "kth_tips2b",
+  "n_images": 4752,
+  "n_classes": 11,
+  "decode_failures": 0,
+  "exact_duplicate_rows": 0,
+  "cross_group_exact_conflicts": 0,
+  "near_duplicate_candidates": 38,
+  "unparsed_authoritative_groups": 0,
+  "checks": [
+    {
+      "pass": true,
+      "message": "expected images 4752, found 4752"
+    },
+    {
+      "pass": true,
+      "message": "expected classes 11, found 11"
+    },
+    {
+      "pass": true,
+      "message": "all images decode"
+    },
+    {
+      "pass": true,
+      "message": "no cross-group exact duplicates"
+    },
+    {
+      "pass": true,
+      "message": "all authoritative groups parse"
+    }
+  ],
+  "pass": true
+}

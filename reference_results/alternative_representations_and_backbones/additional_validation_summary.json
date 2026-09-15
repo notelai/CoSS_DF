@@ -1,0 +1,19 @@
+{
+  "purpose": "Alternative spectral representation and modern-baseline validation",
+  "datasets": [
+    "kth_tips2b",
+    "fmd",
+    "kylberg"
+  ],
+  "status": "secondary descriptive evidence; nominal paired 95% intervals without multiplicity adjustment",
+  "representations": [
+    "DCT-ILR-LR",
+    "fixed 2-level Haar DWT-ILR-LR",
+    "fixed 8-atom local Gabor-ILR-LR"
+  ],
+  "modern_baselines": [
+    "EfficientNet-B0 frozen + logistic",
+    "ViT-B/16 frozen + logistic"
+  ],
+  "clr": "numerical identity check only, not a predictive competitor"
+}

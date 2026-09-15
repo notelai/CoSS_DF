@@ -1,0 +1,29 @@
+# Public-source registry. URLs can be overridden on the CLI if a host changes.
+kth_tips2b:
+  role: primary
+  official_page: https://www.csc.kth.se/cvap/databases/kth-tips/download.html
+  download_type: http
+  download_url: https://www.csc.kth.se/cvap/databases/kth-tips/kth-tips2-b_col_200x200.tar
+  archive_name: kth-tips2-b_col_200x200.tar
+  expected_images: 4752
+  expected_classes: 11
+
+fmd:
+  role: primary
+  official_page: https://people.csail.mit.edu/celiu/CVPR2010/FMD/index.html
+  download_type: http
+  download_url: https://people.csail.mit.edu/celiu/CVPR2010/FMD/FMD.zip
+  archive_name: FMD.zip
+  expected_images: 1000
+  expected_classes: 10
+
+kylberg:
+  role: primary
+  official_page: https://kylberg.org/kylberg-texture-dataset-v-1-0/
+  download_type: discover_zip
+  directory_url: https://filedn.com/lkCRue0RhPO7ercIrqFRl2Y/datasets/KylbergTextureDatasetV1/
+  # Resolver selects the non-rotated full texture dataset ZIP and rejects rotated/small/original/RAW archives.
+  archive_name: KylbergTextureDatasetV1_nonrotated.zip
+  expected_images: 4480
+  expected_classes: 28
+

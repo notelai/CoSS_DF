@@ -1,0 +1,33 @@
+{
+  "dataset": "kylberg",
+  "n_images": 4480,
+  "n_classes": 28,
+  "decode_failures": 0,
+  "exact_duplicate_rows": 0,
+  "cross_group_exact_conflicts": 0,
+  "near_duplicate_candidates": 0,
+  "unparsed_authoritative_groups": 0,
+  "checks": [
+    {
+      "pass": true,
+      "message": "expected images 4480, found 4480"
+    },
+    {
+      "pass": true,
+      "message": "expected classes 28, found 28"
+    },
+    {
+      "pass": true,
+      "message": "all images decode"
+    },
+    {
+      "pass": true,
+      "message": "no cross-group exact duplicates"
+    },
+    {
+      "pass": true,
+      "message": "all authoritative groups parse"
+    }
+  ],
+  "pass": true
+}
