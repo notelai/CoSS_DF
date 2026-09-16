@@ -101,14 +101,6 @@ The primary runs used the environment recorded in `environment/reported_environm
 
 The journal submission also contains an archival Supplementary Software S1 package with retained outer-test probabilities and additional machine-readable artifacts. Its SHA-256 digest is recorded in `docs/ARCHIVAL_SOFTWARE_SHA256.txt`. GitHub is intended for direct browsing and execution; Software S1 preserves the submission-time archival snapshot.
 
-## Citation
-
-Citation metadata are provided in `CITATION.cff`. The journal DOI/citation can be added after publication.
-
 ## License and use
 
 No open-source license is assigned at the peer-review stage. The repository is made public for inspection, verification, and reproducibility of the accompanying research manuscript. Unless otherwise stated, normal copyright restrictions apply.
-
-## Contact
-
-Technical reproducibility issues may be reported through the GitHub issue tracker.
